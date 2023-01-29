@@ -14,7 +14,7 @@ const Navbar = () => {
             <div className={classes.container}>
                 <nav>
                     <NavLink to="/" className={classes.navLogo}>
-                        <img className={classes.navLogoPicture} src="img/logo.png" alt="Logo"/>
+                        <img className={classes.navLogoPicture} src="logo192.png" alt="Logo"/>
                         <p className={classes.navLogoText}>Lost in translation</p>
                     </NavLink>
                     <div className={classes.navUser}>
