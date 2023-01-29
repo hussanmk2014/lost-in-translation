@@ -1,10 +1,13 @@
 import React from "react";
 import {useNavigate} from "react-router-dom";
 
-import {STORAGE_KEY_USER} from "../../consts/sorageKey";
+import {STORAGE_KEY_USER} from "../../consts/storageKey";
 import {useUser} from "../../context/UserContext";
 import {storageDelete, storageSave} from "../../utils/storage";
 import {clearTranslationHistory} from "../../api/translationHistory";
+
+
+import classes from "./ProfileActions.module.css";
 
 
 
@@ -21,7 +24,7 @@ const ProfileActions = () => {
     const clearHistory = async () => {
         const [clearError] = await clearTranslationHistory(user.id);
         if (clearError !== null) {
-            alert("Please, try later");
+            alert("Please try later to clear");
             return;
         }
 
@@ -41,16 +44,16 @@ const ProfileActions = () => {
 
     return (
         <section>
-            <div className="actionsTitle">
-                <h4>From here you can:</h4>
+            <div className={classes.actionsTitle}>
+                <h4>Options</h4>
             </div>
-            <div className="actionsRow">
-                <button className="actionButton"}
+            <div className={classes.actionsRow}>
+                <button className={classes.actionButton}
                         type="button"
                         onClick={() => backToTranslation()}>
-                    Back to translation
+                    Make translation
                 </button>
-                <button className= "actionButton"
+                <button className={classes.actionButton}
                         type="button"
                         onClick={() => clearHistory()}>
                     Clear history

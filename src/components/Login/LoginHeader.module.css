@@ -1,0 +1,74 @@
+/*  Login Header  */
+.LoginHeader {
+    background-color: #d465e8;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 4rem 0 9rem 0;
+    gap: 1rem;
+}
+
+
+/*  Header picture */
+
+
+.robot, .splash {
+    position: relative;
+    height: auto;
+}
+
+.robot {
+    max-width: 6rem;
+    z-index: 2;
+    right: -8rem;
+}
+
+.splash {
+    max-width: 8rem;
+    z-index: 1;
+    top: -1rem;
+}
+
+/*  Header description ( h1 and h4 text)  */
+.LoginHeaderDescription {
+    color: rgb(231, 218, 218);
+}
+
+.LoginHeaderDescription h1 {
+    font-family: "Love Ya Like A Sister", Arial, sans-serif;
+    font-size: 4vw;
+    font-weight: 350;
+}
+
+.LoginHeaderDescription h4 {
+    font-size: 1.5rem;
+}
+
+
+/*  Media Quires   */
+@media only screen and (max-width: 700px) {
+    .LoginHeaderDescription h1 {
+        font-size: 2.6rem;
+    }
+
+    .robot {
+        max-width: 4.5rem;
+        right: -5rem;
+    }
+
+    .splash {
+        max-width: 6rem;
+        top: -0.5rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .LoginHeaderDescription h1 {
+        font-size: 1.5rem;
+    }
+    .LoginHeaderDescription h4 {
+        font-size: 1.2rem;
+    }
+}

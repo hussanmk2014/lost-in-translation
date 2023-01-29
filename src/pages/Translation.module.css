@@ -1,0 +1,21 @@
+/*  Translation page  */
+.container {
+    display: flex;
+    max-width: 900px;
+    margin: auto;
+    flex-flow: column nowrap;
+    padding: max(2vw, 1rem);
+}
+
+
+.backgroundWhite {
+    background-color: rgb(180, 218, 237);
+}
+
+.backgroundYellow {
+    background-color: #dcab50;
+}
+
+.p3 {
+    padding: 3rem;
+}

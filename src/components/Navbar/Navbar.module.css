@@ -1,0 +1,144 @@
+/*  Navbar  */
+header {
+    background-color: #edbe58;
+    color: white;
+    border-bottom: 2px solid #be9750;
+}
+
+nav {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1350px;
+    margin: auto;
+    padding: 0 3.5rem;
+}
+
+
+/*  Content container  */
+.container {
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 3rem;
+}
+
+
+/*  Navbar Logo  */
+.navLogo {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    text-decoration: none;
+    color: rgb(42, 3, 3);
+    padding: 0.5rem;
+    border-radius: 3rem;
+    transition: all 0.5s ease;
+    margin: max(1.2vw, 0.25rem) 0;
+}
+
+.navLogo:hover {
+    background-color: #5890c1;
+    color: rgb(194, 168, 168);
+}
+
+.navLogoText {
+    font-family: "Love Ya Like A Sister", Arial, sans-serif;
+    font-size: 2rem;
+    font-weight: 330;
+}
+
+.navLogoPicture {
+    max-width: 3rem;
+    width: 100%;
+    height: auto;
+    padding: 0.2rem;
+    background-color: rgb(220, 211, 211);
+    border-radius: 50%;
+}
+
+
+/*  Navbar User-Profile  */
+.navUser {
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.disabledLink {
+    pointer-events: none;
+    cursor: default;
+    background-color: #acacac !important;
+}
+
+.navUserLink {
+    text-decoration: none;
+    border-radius: 1rem;
+    background-color: #d2aa5f;
+    color: white;
+    padding: 0.5rem 0 0.5rem 1.2rem;
+    transition: background-color 0.5s ease;
+}
+
+.navUserLink:hover {
+    background-color: #9b73dd;
+}
+
+.navUserName {
+    display: inline-block;
+    position: relative;
+    top: 0.20rem;
+    max-width: 10rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.navUserLogo {
+    position: relative;
+    top: 1rem;
+    border-radius: 2rem;
+    max-width: 3rem;
+    max-height: 3rem;
+    z-index: 2;
+    margin-left: 0.5rem;
+    background-color: #e1b158;
+}
+
+
+/*  Media Quires   */
+@media only screen and (max-width: 700px) {
+    .container {
+        padding: 0 0.6rem;
+    }
+
+    nav {
+        padding: 0;
+    }
+
+    .navLogo {
+        flex-flow: column wrap;
+        justify-content: center;
+    }
+
+    .navLogoText {
+        font-size: 2.3rem;
+    }
+
+    .navLogoPicture {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .navLogo {
+        border-radius: 1.2rem;
+    }
+
+    .navLogoText {
+        text-align: left;
+        max-width: 10rem;
+        font-size: 2rem;
+    }
+}

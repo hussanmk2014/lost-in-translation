@@ -1,0 +1,29 @@
+/*   Translation Header   */
+.TranslationHeader {
+    background-color: #b06ecf;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    padding: 1.5rem 5rem;
+    gap: 1rem;
+}
+
+
+.TranslationHeader h4 span {
+    padding-right: 1.2rem;
+}
+
+.robotHello {
+    max-width: 10rem;
+    max-height: 10rem;
+}
+
+
+/*   Media Quires    */
+@media only screen and (max-width: 800px) {
+    .TranslationHeader {
+        padding: 1.4rem;
+    }
+}

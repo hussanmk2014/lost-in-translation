@@ -1,15 +1,15 @@
 import React from "react";
+
 import {Navigate} from "react-router-dom";
 
 import {useUser} from "../context/UserContext";
 
-
-const withoutAuth = Component => props => {
+const withAuth = Component => props => {
     const {user} = useUser();
-    if (user === null) {
+    if (user !== null) {
         return (<Component {...props}/>);
     }
-    return (<Navigate to="/translation" />);
+    return (<Navigate to="/" />);
 };
 
-export default withoutAuth;
+export default withAuth;

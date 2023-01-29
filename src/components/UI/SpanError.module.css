@@ -1,0 +1,9 @@
+/*  Validation of input  */
+.error {
+    padding: 0.6rem;
+    text-align: center;
+    color: rgb(203, 140, 140);
+    background-color: #9c3c56;
+    margin: 0.5rem auto 0 auto;
+    border-radius: 2.1rem;
+}

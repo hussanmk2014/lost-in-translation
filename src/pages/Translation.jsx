@@ -1,17 +1,18 @@
 import React, {useEffect} from 'react';
 
+import classes from "./Translation.module.css";
+
 import {useTranslation} from "../context/TranslationContext";
 import withAuth from "../hoc/withAuth";
 import TranslationHeader from "../components/Translation/TranslationHeader";
-import TranslationForm from "../components/Translation/TranslationForm";
 import TranslationOutput from "../components/Translation/TranslationOutput";
-
+import TranslationForm from "../components/Translation/TranslationForm";
 
 const Translation = () => {
     // Hooks
     const {translation, setTranslation} = useTranslation();
 
-    // Clear output by reaching this page
+    // Clear the output of translation
     useEffect(() => {
         setTranslation([])
     }, []);

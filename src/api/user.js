@@ -1,12 +1,11 @@
-import { createHeaders } from "./index";
-export const API_KEY = "49202471544530759446";
-export const API_URL = "https://mercury-factual-bayberry.glitch.me/translations";
+import {API_URL, createHeaders} from "./index";
+
 
 export const checkUser = async (username) => {
     try {
         const response = await fetch(`${API_URL}?username=${username}`);
         if (!response.ok) {
-            throw new Error("Could not check user.");
+            throw new Error("Fail with checking the user.");
         }
         const data = await response.json();
         return [null, data];
@@ -28,7 +27,7 @@ export const createUser = async (username) => {
 
         });
         if (!response.ok) {
-            throw new Error("Could not create user with username " + username);
+            throw new Error("Fail with creating user with username " + username);
         }
         const data = await response.json();
         return [null, data];
@@ -49,4 +48,18 @@ export const loginUser = async (username) => {
     }
 
     return await createUser(username);
+};
+
+
+export const getUserByID = async (userID) => {
+    try {
+        const response = await fetch(`${API_URL}/${userID}`);
+        if (!response.ok) {
+            throw new Error("Fail with fetching user.")
+        }
+        const user = await response.json();
+        return [null, user];
+    } catch (error) {
+        return [error.message, null];
+    }
 };

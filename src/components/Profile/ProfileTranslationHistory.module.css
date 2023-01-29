@@ -1,0 +1,18 @@
+/*  Profile Translation History  */
+.history {
+    color: #d6a3a3;
+    padding: max(3vw, 1.2rem);
+}
+
+.historyTitle {
+    padding: 1.3rem;
+    font-size: clamp(1.1rem, 3.1vw, 1.5rem);
+}
+
+.history ol {
+    padding-left: 3.1rem;
+}
+
+.history ol li {
+    padding: 0.5rem;
+}

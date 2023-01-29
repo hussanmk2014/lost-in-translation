@@ -1,0 +1,15 @@
+/*  Profile Header  */
+.ProfileHeader {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    font-size: clamp(1.1rem, 3.1vw, 1.5rem);
+    padding: 3.2rem;
+    gap: 1rem;
+}
+
+.profileUsername {
+    color: #c54323;
+    padding: 0.5rem;
+}

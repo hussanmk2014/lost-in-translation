@@ -1,11 +1,13 @@
 import React from "react";
 
+import classes from "./Profile.module.css";
 
 import ProfileHeader from "../components/Profile/ProfileHeader";
 import ProfileActions from "../components/Profile/ProfileActions";
-import ProfileTranslationHistory from "../components/Profile/ProfileTranslationHistory";
 import withAuth from "../hoc/withAuth";
 import {useUser} from "../context/UserContext";
+import ProfileTranslationHistory from "../components/Profile/ProfileTranslationHistory";
+
 
 
 const Profile = () => {
@@ -19,7 +21,7 @@ const Profile = () => {
                 <ProfileActions/>
                 <ProfileTranslationHistory history={user.translations}/>
                 <div className={classes.profileFooter}>
-                    <p>Profile</p>
+                    <p>My page</p>
                 </div>
             </div>
         </section>

@@ -1,0 +1,12 @@
+/*  Login page  */
+.offsetContainer {
+    position: relative;
+    top: -6rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    max-width: 900px;
+    margin: auto;
+}
+
+

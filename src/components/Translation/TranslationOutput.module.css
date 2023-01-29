@@ -1,0 +1,39 @@
+/*   Translation Output   */
+.signsRow {
+    display: flex;
+    flex-flow: row wrap;
+    list-style: none;
+    gap: 0.5rem;
+}
+
+.signsRow li img{
+    max-width: 65px;
+    max-height: 65px;
+}
+
+.rows {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1.4rem;
+}
+
+
+/*   Card   */
+.card {
+    background-color: rgb(247, 198, 198);
+    box-shadow: rgba(36, 4, 4, 0.24) 0 3px 8px;
+    border-radius: 1.1rem;
+    width: 100%;
+}
+
+.cardContent {
+    padding: 3.2rem;
+}
+
+.cardFooter {
+    background-color: #c95e57;
+    color: white;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    padding: 0.6rem 2.1rem;
+}

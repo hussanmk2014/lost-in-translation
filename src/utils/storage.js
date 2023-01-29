@@ -1,13 +1,13 @@
 const validateKey = (key) => {
     if (!key || typeof key !== "string") {
-        throw new Error("Invalid key provided!");
+        throw new Error("Invalid key !");
     }
 };
 
 export const storageSave = (key, value) => {
     validateKey(key);
     if (!value) {
-        throw new Error("storageSave: No value key provided for " + key);
+        throw new Error("storageSave: there is no value key provided for " + key);
     }
     localStorage.setItem(key, JSON.stringify(value));
 };

@@ -1,0 +1,63 @@
+/*  Translation containers  */
+.container {
+    display: flex;
+    max-width: 950px;
+    margin: auto;
+    flex-flow: column nowrap;
+    padding: max(2.1vw, 1rem);
+}
+
+
+/*  Default Input container  */
+.inputContainer {
+    background-color: #eecfcf;
+    border: 3px solid #afa0a0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 1.1rem;
+    font-size: 2rem;
+}
+
+
+/*  Pipe sign  */
+.inputPipeSign {
+    padding: 0 1.1rem;
+}
+
+
+/*  Input field  */
+.inputField {
+    font-family: "Sanchez", Arial, sans-serif;
+    background-color: #ebe0e0;
+    padding: 0.6rem 0;
+    margin-right: 1rem;
+    flex-grow: 1;
+    font-size: clamp(1.1rem, 3vw, 2rem);
+    border: 2px solid #EFEFEF;
+    font-weight: 600;
+}
+
+.inputField:focus {
+    outline: none !important;
+    border-bottom: 2px dashed #b4b0b0;
+}
+
+
+/*  Round button  */
+.roundButton {
+    padding: 0.5rem 1rem;
+    background-color: #9f6cef;
+    color: rgb(208, 198, 198);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    border: none;
+    font-size: inherit;
+}
+
+.roundButton:hover {
+    background-color: #c7b28b;
+    color: #8663be;
+    transform: scale(1.3);
+}
