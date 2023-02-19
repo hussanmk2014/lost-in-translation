@@ -1,4 +1,4 @@
-export const API_KEY = "49202471544530759446";
+export const API_KEY = "eG6pRO9iob5G3I8YyttNFCC7Ns2B5XZxreFbTAKGYyiW78lMz6AMfegex4QsYgx9";
 export const API_URL = "https://mercury-factual-bayberry.glitch.me/translations";
 
 
